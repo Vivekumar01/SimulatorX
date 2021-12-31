@@ -1,0 +1,158 @@
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+<title>Generator</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+div#total { width: 840px; height: 400px; }
+div#canvas { width: 600px; height: 400px; }
+div#panel { left: 600px; width: 240px; height: 400px; } 
+.pos1 { left: 10px; }
+button { width: 220px; }
+input[type="range"] { width: 220px; }
+</style>
+<script src="generator.js"></script>
+<script src="generator_en.js"></script>
+<meta name="description" content="HTML5 app: Generator">
+<meta name="keywords" content="app, physics, electricity, electrodynamics, generator, induction">
+</head>
+
+<body>
+  <nav>
+    <label class="logo">SimulatorX</label>
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a class="active" href="simulation.html">Simulations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <label id="icon">
+      <i class="fas fa-bars"></i>
+    </label>
+    
+  </nav>
+  
+  <h1>Generator</h1>
+  <h2>Introduction</h2>
+  <p>It is a device used to generate electricity. 
+    It works on the principle of electromagnetic induction. 
+    In this process, the conductor coil (the strongest copper coil on the steel coil) rotates rapidly between the magnetic poles of the horse's shape.</p>
+    <br>
+    <p>You can use this simulator by following some instruction which are mentioned in the Instruction file for better visualisation...</p>
+    
+    <div id="total">
+      <div id="canvas"><canvas id="cv" width=600 height=400>This browser doesn't support HTML5 canvas!</canvas></div>
+      <div id="panel">
+        <div style="top: 20px;"><input type="radio" id="rb1a" name="bg" value=""><label for="rb1" id="rb1b"></label></div>
+        <div style="top: 50px;"><input type="radio" id="rb2a" name="bg" value=""><label for="rb2" id="rb2b"></label></div>
+        <div style="top: 90px;"><button id="bu1" style="background-color: #ff6060;"></button></div>
+        <div style="top: 140px;"><input type="range" id="sl" min=0 max=20 step=1 value=10></div>
+        <div style="top: 170px;"><span id="op" class="pos1"></span></div>
+        <div style="top: 200px;"><button id="bu2" style="background-color: hsl(39, 100%, 50%);"></button></div>
+        <div style="top: 250px;"><input type="checkbox" id="cb1a" name="cb1a" value=""><label for="cb1a" id="cb1b" style="color: #423F3E;"></label></div>
+        <div style="top: 280px;"><input type="checkbox" id="cb2a" name="cb2a" value=""><label for="cb2a" id="cb2b" style="color: #284E78;"></label></div>
+        <div style="top: 310px;"><input type="checkbox" id="cb3a" name="cb3a" value=""><label for="cb3a" id="cb3b" style="color: #ff0000;"></label></div>
+        <!-- <div style="top: 360px;"><span class="pos1" id="author"></span></div> -->
+        <div style="top: 380px;"><span class="pos1" id="translator"></span></div>
+      </div>
+    </div>
+    <p style="position: relative; text-align: center;">simulator</p>
+    <h2>Construction of AC generator</h2>
+    <p>The A.C. Generator is consist of four main parts :
+    </p>
+    <h3>(1) THE COIL (ARMATURE) :</h3>
+    <p>A rectangular coil ABCD consist of a large number
+      of turns of copper bound over a soft iron core is called 
+      armature. The soft iron core is used to increase the magnetic flux.
+    </p>
+    <h3>(2) MAGNETIC FIELD :
+    </h3>
+    <p>It is usually a permanent sponge magnet having concave
+      poles. The armature is rotated of a magnet so that axis of the
+      armature is perpendicular to magnetic field lines.</p>
+      <h3>(3) SLIP RINGS :</h3>
+      <p>Slip rings are the magnetic rings which are connected
+        in the terminal of the armature. These rings are rotated
+        with the coil and these are use to draw the current from
+        the generator.</p>
+        <h3>(4) BRUSHES :</h3>
+        <p>The brushes B1 & B2
+          are just touch the slip rings. They are
+          not rotating with the coil and these brushes leads to the
+          output of load resistance.</p>
+          <h2>Theory</h2>
+          <p>1. The strong magnetic field is produced by a current flow through the
+            field coil of the rotor.
+          </p>
+          <p>2. The field coil in the rotor receives excitation through the
+              use of slip rings and brushes.
+          </p>
+          <p>3. Two brushes are spring-held in contact with the slip rings to provide the
+                continuous connection between the field coil and external circuit.
+          </p>
+          <p>4. The armature is contained within the windings of the stator and is
+                  connected to the output.
+          </p>
+          <p>5. Each time the rotor makes one complete revolution, one complete
+                    cycle of AC is developed.
+          </p>
+          <p>6. A generator has many turns of wire wound into the slots of the rotor</p>
+          <p>7. The magnitude of AC voltage generated by an AC generator is
+                      dependent on the field strength and speed of the rotor.
+          </p>
+          <p>8. Most generators are operated at a constant speed; therefore, the
+                generated voltage depends on field excitation, or strength.
+          </p>
+          <h2>Working</h2>
+          <p>The conductor coil and its core are known as armature. 
+                          The arm is connected to the shaft of the machine’s power source like a car and is rotated. 
+                          The required electrical power can be provided by engines running on fuels such as diesel, petrol, natural gas, etc. 
+                          Or with renewable energy sources such as wind turbine, water turbine, solar power turbine, etc. 
+                          As the coil rotates, you cut off the magnetic field that lies between the two magnetic poles. 
+                          The magnetic field will disrupt the electrons in the conductor to generate the flow of electrical energy within them.
+          </p>
+          <h2>Expression for Instaneous e.m.f. produced</h2>
+          <p>Let position of the coil at any time t. It's make angle θ with
+          vertical. If w is uniform angular speed
+          of the coil.</p>
+          <p>Then</p>
+          <p><img style="margin-left: 30px;" src="Activity/formula/speed_1.jpg" alt="Speed theta = omega * time"></p>
+          <p>B be the strength of magnetic field n be the number of
+          turns in the coil and A area of the coil then magnetic flux
+          with the coil in this position is given by :
+          </p>
+          <img style="margin-left: 30px;" src="Activity/formula/magnetic flux.png" alt="magnetic flux">
+          <p>differentiate w.r.t. time :-
+          </p>
+          <img style="margin-left: 30px;" src="Activity/formula/differentiation.jpg" alt="differentiation">
+          <p>Maximum value of e.m.f. say so &#949; ͦ</p>
+          <img style="margin-left: 30px;" src="Activity/formula/maximum_e.png" alt="ε = ε° sin(𝜔𝑡)">
+          <h2>Result</h2>
+          <p>Hence, maximum value of instantaneous
+          e.m.f. in a AC Generator is given by</p>
+          <img style="margin-left: 30px;" src="Activity/formula/result.png" alt="ε = ε° sin(𝜔𝑡)">
+          <br>
+          <br>
+          <p>
+            You can download Instruction for Generator by clicking on button  <br><br>
+            <a style="font-size: 20pt; color: brown; margin-left: 500px;" href="Activity/Instructuction to Generator.docx" target="_blank">Generator Instruction</a>
+          </p>
+          <br>
+          <br>
+          <br>
+          <br>
+                              
+          
+          <!-- <script>endPage("generator",8,5,1998,22,12,2015);</script> -->
+                              
+                              
+</body>
+</html>
+                            

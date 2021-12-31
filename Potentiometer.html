@@ -1,0 +1,100 @@
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+<title>Potentiometer</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="app_pot.css">
+<link rel="stylesheet" href="style.css">
+<style>
+div#total { width: 700px; height: 400px; }
+div#canvas { width: 400px; height: 400px; }
+div#panel { left: 400px; width: 300px; height: 400px; } 
+input[type="text"] { left: 190px; width: 60px; }
+input[type="range"] { left: 35px; width: 230px; }
+button { width: 280px; }
+button.small { width: 20px; height: 20px; background-color: #c0c0c0;}
+.pos1 { left: 10px; }
+.pos3 { left: 270px; }
+</style>
+<script src="potentiometer.js"></script>
+<script src="potentiometer_en.js"></script>
+<script src="page_phen.js"></script>
+<meta name="description" content="HTML5 app: Potentiometer">
+<meta name="author" content="Walter Fendt">
+<meta name="keywords" content="app, physics, electrodynamics, voltage, Volt, current, amperage, Ampere, resistance, Ohm, potentiometer">
+</head>
+
+<body>
+  <nav>
+    <label class="logo">SimulatorX</label>
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a class="active" href="simulation.html">Simulations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <label id="icon">
+        <i class="fas fa-bars"></i>
+      </label>
+
+    </nav>
+
+<h1>Potentiometer</h1>
+<p>A Potentiometer is a tool used to evaluate the emf (electromotive power) of  cells, 
+  to degree the inner resistance of a cell, and the P.D in the antagonist. 
+  It includes a protracted fence of separated location and 10 m long. Made of twine ought to 
+  have a excessive resistivity and a low temperature coefficient. The strings are stretched frivolously 
+  over every different on a wood board. The strings are tied in a 
+  sequence the use of thick copper strings. Measured with a meter scale on a wood board.</p>
+<h2><strong>Working principle</strong></h2>
+<p>The precept of a potentiometer is that the capacity dropped throughout a section of a twine 
+  of uniform cross-segment sporting a steady modern-day is immediately proportional to its length.</p>
+<p>You can use this Simulator to do this Activity </p>
+<p>All the Instruction are in the Activity file</p>
+
+<div id="total">
+  <div id="canvas"><canvas id="cv" width=400 height=400>This browser doesn't support HTML5 canvas!</canvas></div>
+  <div id="panel">
+    <div style="top: 20px;"><span id="ip1a" class="pos1"></span><input type="text" id="ip1b"><span id="ip1c" class="pos3"></span></div>
+    <div style="top: 70px;"><span id="ip2a" class="pos1"></span><input type="text" id="ip2b"><span id="ip2c" class="pos3"></span></div>
+    <div style="top: 120px;"><span id="sla" class="pos1"></span></div>
+    <div style="top: 145px;">
+      <button id="slb" class="small">&lt;</button>
+      <input type="range" id="slc" min=0 max=200 step=1>
+      <button id="sld" class="small" style="margin-left: 240px;">&gt;</button>
+    </div>
+    <div style="top: 200px;"><span id="ip3a" class="pos1"></span><input type="text" id="ip3b"><span id="ip3c" class="pos3"></span></div>
+    <div style="top: 250px;"><input type="checkbox" id="cb1a" name="cb1" value=""><label for="cb1a" id="cb1b"></label></div>
+    <div style="top: 290px;"><input type="checkbox" id="cb2a" name="cb2" value=""><label for="cb2a" id="cb2b"></label></div>
+    <!-- <div style="top: 360px;"><span id="author" class="pos1"></span></div> -->
+    <div style="top: 380px;"><span id="translator" class="pos1"></span></div>
+  </div>
+</div>
+<p style="text-decoration: solid; text-align: center; font-size: 18pt;">Potentiometer Simulator</p>
+<h2>Theory</h2>
+<p>The potentiometer is a device used to measure the internal resistance of a cell and is used to compare the EMF of two cells and potential difference across a resistor. 
+  The relation between potential difference, EMF, and internal resistance of a cell is given by</p>
+  <img style="margin-left: 30px;" src="Activity/formula/relation.png" alt="magnetic flux">
+  <p>Internal Resistance is given by </p>
+  <img style="margin-left: 30px;" src="Activity/formula/internal resistance.png" alt="magnetic flux">
+  <p> The Internal Resistance of the cell in terms of L1 and L2 is given by</p>
+  <img style="margin-left: 30px;" src="Activity/formula/internal_resist_length.png" alt="magnetic flux">
+  <br>
+  <br>
+<p>
+  You can download Potentiometer Activity by clicking on download button <br> 
+  <a style="font-size: 20pt; color: brown; margin-left: 500px;" href="Activity/Potentiomenter Experiment.docx" target="_blank">Potentiometer Activity</a>
+</p>
+<br>
+<br>
+<br>
+<br>
+
+<!-- <script>endPage("potentiometer",16,2,2006,17,9,2016);</script> -->
+
+</body>
+</html>

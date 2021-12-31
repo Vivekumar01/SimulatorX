@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Feedback</title>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <nav>
+        <label class="logo">SimulatorX</label>
+        <ul>
+            <li><a  href="index.html" >Home</a></li>
+            <li><a href="simulation.html">Simulations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a class="active" href="feedback.html">Feedback</a></li>
+        </ul>
+        <label id="icon">
+          <i class="fas fa-bars"></i>
+        </label>
+  
+        <section style="background: snow;"></section>   
+    </nav>
+    <form style="align-items: center;"><label  for="name"> <strong > Feedback Form</strong> </label>
+        <br /> 
+        <br />
+        <h3>Quality</h3> 
+        <input checked="checked" name="score" type="radio" value="Bad" /> Bad <br /> 
+        <input name="score" type="radio" value="Average" /> Average <br /> 
+        <input name="score" type="radio" value="Excellent" /> Excellent <br /> 
+        <br />
+        <h3>Suggestions</h3> 
+        <textarea cols="50" rows="10" style="margin: 0px; width: 740px; height: 300px;"></textarea><br>
+        <br />
+        <h3>Satisfaction</h3> 
+        <input name="democheckbox" type="checkbox" value="1" /> Unsatisfied<br /> 
+        <input name="democheckbox" type="checkbox" value="1" /> Satisfied<br /> 
+        <br />
+        <h3>Helpful</h3> 
+        <input name="democheckbox" type="checkbox" value="1" /> Beneficial<br /> 
+        <input name="democheckbox" type="checkbox" value="1" /> Useless<br /> 
+        <br />
+        <button type="submit" value="Submit" style="align-tracks: center; width: 70px;">Submit</button>
+    </form>
+    
+</body>
+</html>
